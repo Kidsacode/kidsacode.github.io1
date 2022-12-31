@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="path/to/ncsimplehtmleditor.css">
+        <script src="path/to/ncsimplehtmleditor.js"></script>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -626,9 +629,10 @@
                 maxImageUpload: 1200000,
                 toolbar: ['edit', 'undo', 'redo', 'up', 'down', 'cut', 'copy', 'paste', 'code', 'link', 'image', 'head', 'save']
             };
-            var editor = new ncSimpleHtmlEditor(options);
-            editor.start();
-        });
+           
+                var editor = new ncSimpleHtmlEditor();
+                editor.start();
+
     </script>
 </div>
 
