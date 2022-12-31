@@ -610,17 +610,26 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <!-- ncsedt-implement:before -->
+      <!-- ncsedt-implement:before -->
 <div id="ncsedt-implement">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TheNocoder/ncSimpleHtmlEditor@master/ncsimplehtmleditor.css">
     <script src="https://cdn.jsdelivr.net/gh/TheNocoder/ncSimpleHtmlEditor@master/ncsimplehtmleditor.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', function () {
-            var editor = new ncSimpleHtmlEditor();
+            var options = {
+                editable: "body",
+                linearHistory: true,
+                groupingHistory: 200,
+                toolbarCols: null,
+                saveTimeout: 500,
+                maxImageUpload: 1200000,
+                toolbar: ['edit', 'undo', 'redo', 'up', 'down', 'cut', 'copy', 'paste', 'code', 'link', 'image', 'head', 'save']
+            };
+            var editor = new ncSimpleHtmlEditor(options);
             editor.start();
         });
     </script>
 </div>
-       
+
     </body>
 </html>
